@@ -75,7 +75,7 @@ or            (\|\|)
 whitespace    ([ \t])
 newline       ([\n])
 stringcons    (\"([^"\n])*(\"|\n))
-punctuation   ([\+\-\*\/\{\}\(\)\;\.\[\]<>=\,])
+punctuation   ([%\+\-\*\/\{\}\(\)\;\.\[\]<>=,!])
 double        {digit}+\.{digit}*([Ee][\+\-]?{digit}+)*
 hexnumber    {hexstart}{hexdigit}+
 intcons      {digit}+
