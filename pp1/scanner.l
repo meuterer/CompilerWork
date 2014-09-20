@@ -35,7 +35,7 @@ int columnnum = 1;
  */
 struct yyltype yylloc; // manually dclared for pp1, later Yacc provides
 
-/* Macro: YY_USER_ACTION 
+/* Macro: YY_USER_ACTION
  * ---------------------
  * This flex built-in macro can be defined to provide an action which is
  * always executed prior to any matched rule's action. Basically, it is
@@ -45,7 +45,7 @@ struct yyltype yylloc; // manually dclared for pp1, later Yacc provides
  * be called once for each pattern scanned from the file, before
  * executing its action.
  */
-static void DoBeforeEachAction(); 
+static void DoBeforeEachAction();
 static void PrintStuff();
 #define YY_PRINT_STUFF PrintStuff();
 #define YY_USER_ACTION DoBeforeEachAction();
@@ -56,7 +56,7 @@ static void PrintStuff();
   * input file. Here is where you set options for the scanner, define lex
   * states, and can set up definitions to give names to regular expressions
   * as a simple substitution mechanism that allows for more readable
-  * entries in the Rules section later. 
+  * entries in the Rules section later.
   */
 boolcons       ((true|false))
 digit         (([0-9]))
@@ -81,18 +81,19 @@ hexnumber    {hexstart}{hexdigit}+
 intcons      {digit}+
 %%             /* BEGIN RULES SECTION */
  /* All patterns and actions should be placed between the start and stop
-  * %% markers which delimit the Rules section. 
-  */ 
+  * %% markers which delimit the Rules section.
+  */
 {gte}     {return(T_GreaterEqual);}
 {lte}     {return(T_LessEqual);}
 {eq}      {return(T_Equal);}
 {punctuation} {return(yytext[0]);}
 {and}       {return(T_And);}
 {or}        {return(T_Or);}
+{ne}        {return(T_NotEqual);}
 if      {return(T_If);}
 void    {return(T_Void);}
 string  {return(T_String);}
-this    {return(T_This);} 
+this    {return(T_This);}
 while   {return(T_While);}
 break   {return(T_Break);}
 int     {return(T_Int);}
@@ -112,7 +113,7 @@ true  {yylval.boolConstant = 1; return(T_BoolConstant);}
 false {yylval.boolConstant=0;return(T_BoolConstant);}
 {stringcons} { if(yytext[strlen(yytext)-1]!= '"')
                {
-                  ReportError::UntermString(&yylloc,yytext);   
+                  ReportError::UntermString(&yylloc,yytext);
                } else {
                   yylval.stringConstant=strdup(yytext);
                   return(T_StringConstant);}}
