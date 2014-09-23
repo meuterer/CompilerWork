@@ -1,0 +1,24 @@
+//Extolls the virtues of compilers by printing one
+class CompilerVirtues{
+string virtue1;
+string virtue2;
+string virtue3;
+void setup(){
+this.virtue1 = "It's fun!";
+this.Virtue2 = "MLS is great
+this.Virtue3= "A great TA";
+}
+string GetVirtue(){
+return this.virtue2;
+}
+}
+void main(){
+CompilerVirtues tester;
+string ourvirtue;
+tester = New(CompilerVirtues);
+CompilerVirtues.setup();
+ourvirtue = CompilerVirtues.GetVirtue();
+Print("Compilers is great because:");
+Print(ourvirtue);
+return
+}

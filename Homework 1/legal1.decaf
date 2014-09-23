@@ -1,0 +1,25 @@
+//read in an int and compute that many fibonacci numbers outputting them
+void fibSeq(int num){
+int[] numtimes;
+int i;
+numtimes = NewArray(num+1, int);
+numtimes[0] = 1;
+numtimes[1] = 1;
+for(i = 3; i<=num;num = num +1 ){
+numtimes[i] = numtimes[i-1] + numtimes[i-2];
+}
+Print (numtimes[num]);
+return;
+}
+void main (){
+int numTimes;
+Print("Enter fibonacci number to calculate:");
+
+numTimes = readInteger();
+if(numTimes >=0){
+fibSeq(numTimes);
+} else {
+Print("Sorry that's a negative number!");
+}
+return;
+}

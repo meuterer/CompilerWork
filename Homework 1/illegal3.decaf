@@ -1,0 +1,26 @@
+/*
+type in place of identifier in interface
+prototypes need variables not expressions;
+identifier and variable type out of order in variable decl
+if statement has no stmt between it and else
+break takes no following string constants
+! statement needs an expression after it not a WhileStmt
+return statement needs expression not hodgepodge of random reserved operators and [s]
+Expr.ident needs an ident not an intConstant
+coolObject line uses ; instead of ,
+coolThing function prototype not legal in statement block
+*/
+interface bool
+{
+void SecretPrototype(ReadLine();ReadLine(););
+robot int;
+if (wubble = ReadInteger()) else
+{
+break "down";
+}
+wubble = !while("dddd");
+5 >= 3. 3;
+coolObject.dothething(3;"dddd";)
+coolThing coolThing (coolThing coolThing){}
+Return [ +****&++++ ];
+}

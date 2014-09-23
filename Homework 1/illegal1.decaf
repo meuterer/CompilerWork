@@ -1,0 +1,25 @@
+/*
+Line 13 has an illegal identifier name and a bad assignment
+if statement has no parentheses
+while loop cannot declare a new class
+arguments to NewArray in wrong order
+doStuff has Formals that do not fit variable+
+return in doStuff cannot have a function prototype must be an Expr
+Print has illegal non Expr statements in it (ReturnStmt)
+for statement following stringConstant not ended by semicolon
+*/
+class WeiWang extends GraduateStudent {
+int awesomeness;
+while (class TotallyWrong implements COOLSTUFF)
+{
+awesomeness = awesomeness + 1;
+}
+return NewArray[int,4];
+int doStuff (class break Print)
+{
+return void ident( int stuff);
+}
+Print(return int stuff;);
+for(;ReadInteger();)
+"sdalkjasdjdsalkdsdsalkjdsa"
+}

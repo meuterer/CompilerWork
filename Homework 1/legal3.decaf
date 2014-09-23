@@ -1,0 +1,35 @@
+/*Loop a lot depending on iput to test conditionals and loops
+printing out the modified input
+*/
+void main(){
+int numtimes;
+bool ifvar1;
+bool ifvar2;
+int input;
+Print("Enter an integer!");
+input = ReadInteger();
+if(input > 4){
+  while(input>4){
+    input = input -1;
+    Print("Reduction in number!");
+  }
+  Print ("Input \now/ =",input);
+} else {
+  if(input > -3){
+      while(input < 0){
+        input = input + 1;
+        Print("input raised to",input);
+      }
+  }
+}
+Print("How many times would you like to increment input?");
+numtimes = ReadInteger();
+for(i = 0;i<=numtimes;i = i + 1){
+   input = input + i;
+}
+Print("input has ended at:",input);
+return;
+}
+
+
+*/

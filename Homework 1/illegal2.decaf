@@ -1,0 +1,24 @@
+/*
+Program does not open with a Decl
+no parentheses after print
+return is not an expr and not valid in print
+can't declare variables after stmts in a statement block
+class dec has no curly braces/fields
+no valid syntax for a variable type 5 times in a row
+if statement needs (expr) not random operators and reserved words
+many missing semicolons
+ReadLine cannot take any arguments
+for has commas not semicolons
+*/
+Print "I like compilers!"
+Print(return,"Compilers are fun")
+while(compilers <= ReadLine())
+{
+if(x == 3);
+int robots;
+}
+class LinearTimeNumberFactorer extends TuringAward implements MoneyMaker;
+bool bool bool bool bool
+if [ > + Print NewArray
+ReadLine(New(TeachingAssistant));
+for(this,this,this);
